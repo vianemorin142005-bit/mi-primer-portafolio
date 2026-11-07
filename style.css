@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f3f6fa;
+  color: #263238;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.encabezado {
+  padding: 2rem max(1.5rem, calc((100% - 900px) / 2)) 4rem;
+  background: #244b68;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.etiqueta {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+main {
+  width: min(900px, 90%);
+  margin: 3rem auto;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+.rejilla {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.tarjeta {
+  padding: 1.25rem;
+  border: 1px solid #d5deea;
+  border-radius: 10px;
+  background: white;
+}
+
+.nota {
+  color: #526273;
+}
+
+footer {
+  padding: 1.5rem;
+  background: #e5ebf1;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .rejilla {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    justify-content: flex-start;
+  }
+}
